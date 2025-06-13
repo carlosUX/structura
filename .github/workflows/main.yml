@@ -24,6 +24,6 @@ jobs:
 
     - name: Deploy to Azure
       run: |
-        az webapp up --name structura --resource-group StructuraRG --runtime "PYTHON:3.11"
+        az webapp up --name structura --resource-group rg-mylovelauren-2820 --runtime "PYTHON:3.11"
       env:
         AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
